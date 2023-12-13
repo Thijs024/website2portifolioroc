@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    background-color: #0B102B;
+}
+nav div{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+ul {
+
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 25px;
+    padding: 0;
+    overflow: hidden;   
+    
+    list-style: none;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+    
+  }
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  .active{
+    margin: 20px;
+    width: 60px;
+    background-color: #FF604E;
+    border-radius: 30px;
+    justify-content: center;
+  }
+  .thijs{
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .tlogo{
+    width: 130px;
+    height: 100px;
+  }
+  .navibalk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .tlogoboks{
+width: 130px;
+  }
+  .footer{
+    display: flex;
+    background-color: #0B102B;
+    width: 100%;
+    height: 100px;  
+  bottom: 0px;
+  flex-wrap: wrap;
+  gap: 10px;
+  }
+
+  .github{
+    width: 50px;
+    height: 50px;
+    margin-right: 100px;
+  }
+  .insta{
+    height: 50px;
+    width: 50px;
+  }
+  .info-thijs{
+    width: 600px;
+    color: white;
+    height: 100px;
+    font-size: 25px;
+  }
+  .footercontact{
+    width: 670px;
+    display: flex;
+    justify-content:end;
+    align-items: center;   
+    gap: 10px;
+    
+  }
+  .mijnportifolio{
+    background-color: #EB4138;
+  }
+  .hallo{
+    background-color: #0B102B;
+    color: white;
+    height: 150px;
+    width: 400px;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    margin-left: 100px;
+    font-size: 30px;
+  }
+  .blank{
+    height: 25px;
+  }

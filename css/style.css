@@ -1,31 +1,42 @@
+/* dit is voor de de randen dat er geen wite rand er zit */
 *{
     margin: 0;
     padding: 0;
 }
+body{
+  background: url('../img/pexels-felix-mittermeier-956981.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Righteous', sans-serif;
+  color: #E8FA23;
+}
+/* dit is de locatie van de navigatie balk */
 nav{
     display: flex;
-    background-color: #0B102B;
+    background-color: #281C3A;
 }
+/* dit is het blokje van de navigatie balk dus waar alle dingen in staan */
 nav div{
     width: 500px;
-    height: 100px;
+    height: 120px;
     display: flex;
     justify-content: center;
 }
+/* dit is de is voor de locatie van de blokjes in de navigatie balk */
 ul {
 
     display: flex;
     justify-content: center;
     list-style-type: none;
-    margin-top: 25px;
+    top: 25px;
     padding: 0;
     overflow: hidden;   
-    
+    color: #E8FA23;
     list-style: none;
   }
+  /* dit is voor de tekst */
   li a {
     display: block;
-    color: white;
+    color: #E8FA23;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -36,59 +47,77 @@ ul {
   li a:hover {
     background-color: #111;
   }
+  .navibalk a:hover{
+    color: white
+  }
+/* dit is voor de links naar de andere pagina's */
   .active{
+    position: relative;
     margin: 20px;
     width: 60px;
-    background-color: #FF604E;
+    background-color: #342C83;
     border-radius: 30px;
     justify-content: center;
   }
+  /* dit is voor de tekst naast mijn logo */
   .thijs{
-    color: white;
-    font-size: 30px;
+    position: relative;
+    
+    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
+    right: 10px;
   }
+  /* dit is voor mijn logo */
   .tlogo{
     width: 130px;
     height: 100px;
   }
+  /* dit is ook nog voor de navigatiebalk */
   .navibalk{
     display: flex;
     justify-content: center;
     align-items: center;
 
   }
+  /* dit is waar de logo in zit*/
   .tlogoboks{
 width: 130px;
+height: 120px;
+align-items: center;
   }
+  /* dit is voor de footer */
   .footer{
     display: flex;
-    background-color: #0B102B;
+    background-color: #281C3A;
     width: 100%;
     height: 100px;  
   bottom: 0px;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: end;
   }
-
+/* dit is voor de github logo rechts onder in de footer */
   .github{
+    cursor: pointer;
+    position: relative;
     width: 50px;
     height: 50px;
-    margin-right: 100px;
+    right: 100px;
   }
   .insta{
     height: 50px;
     width: 50px;
   }
+  /* dit is voor de informatie over mezelf */
   .info-thijs{
     width: 600px;
-    color: white;
+
     height: 100px;
     font-size: 25px;
   }
+  /* dit was bedoeld voor mijn contact */
   .footercontact{
     width: 670px;
     display: flex;
@@ -97,20 +126,216 @@ width: 130px;
     gap: 10px;
     
   }
+  /* dit is voor de tekst */
   .mijnportifolio{
-    background-color: #EB4138;
+   
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
   }
+  /* dit is voor de tekst in het eerste blokje met tekst op de home page */
   .hallo{
-    background-color: #0B102B;
-    color: white;
-    height: 150px;
+    position: relative;
+    background-color: #281C3A;
+
+    height: 140px;
     width: 400px;
+    border-radius: 30px;  
+    align-items: center;
+    left: 100px;
+    font-size: 25px;
+    text-align: center;
+  }
+  .tekst-hello{
+    top: 50px;
+    text-align: center;
+  }
+  /* dit heb ik gebruikt om een beetje ruimte te krijgen tussen randen */
+  .blank{
+    
+    height: 25px;
+  }
+  /* dit is voor de foto van de website afbeelding */
+  .website-foto{
+    position: relative;
+    width: 500px;
+    right: 100px;
+  }
+  /* dit is voor de tekst in het rechter blokje  */
+  .deze-website{
+    display: flex;
+    
+    justify-content: space-between;
+  }
+  /* dit is voor een afbeelding met codes er in */
+  .codes{
+    position: relative;
+    left: 100px;
+    width: 450px;
+  }
+  /* dit is voor de tekst in het rechter vakje op de pagina over mij */
+  .informatie-over-mij{
+    position: relative;
+    display: flex;
+    background-color: #281C3A;
+
+    height: 150px;
+    width: 500px;
     border-radius: 30px;
     text-align: center;
     align-items: center;
-    margin-left: 100px;
-    font-size: 30px;
+    right: 100px;
+    top: 50px;
+    font-size: 25px;
   }
-  .blank{
-    height: 25px;
+  /* dit is bedoeld om een foto van mezelf er in te zetten */
+  .foto-van-mezelf{
+
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly ;
+
   }
+/* dit is ook voor een foto van mezelf */
+  .foto-thijs{
+    width: 250px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+  }
+/* dit is ook bedoeld voor tekst */
+  .ik-ben-thijs{
+    position: relative;
+    background-color: #281C3A;
+    height: 120px;
+    width: 500px;
+    border-radius: 15px;
+
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+  
+  }
+  /* dit is de section voor de twee blokken op de pagina about */
+.twee-blokken{
+  align-items:center
+  }
+  /* dit is de sections voor de skills pagina */
+  .boks{
+    display: flex;
+  }
+/* dit is voor de section waar de contact in kan typen */
+  .contactboks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* dit is de boks van de contact */
+  .helecontact{
+    top: 50px;
+    bottom: 50px;
+    height: 600px;
+    width: 600px;
+    background-color: #281C3A;
+    border-radius: 30px;
+    display: flex ;
+    justify-content: center;
+  }
+  /* hier kan je je email invoeren op de pagina van contact */
+  .email{
+    border-radius: 15px;
+    border: none;
+    height: 100px;
+    width: 450px ;
+    background-color: #342C83;
+    color: #E8FA23;
+  }
+  /* hier zitten de vakken in van de contact pagina */
+  .email-message{
+    height: 600px;
+    justify-content: center;
+    color: #E8FA23;
+  }
+  /* hier voor je je message in op de contact pagina */
+  .message{
+    height: 200px;
+    width: 450px;
+    border-radius: 15px;
+    border: none;
+    background-color: #342C83;
+    color: #E8FA23;
+  }
+  /* dit is de boks voor de submit button */
+  .boks-send{
+    height: 125px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: #E8FA23;
+    
+  }
+  /* dit is de button submit */
+  .send{
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    background-color: #342C83;
+    color: #E8FA23;
+  }
+  /* dit is voor de boks van de tekst op de pagina skills */
+  .this-all{
+    position: relative;
+    display: flex;
+    background-color: #281C3A;
+    height: 100px;
+    width: 400px;
+    border-radius: 15px;
+    left: 100px;
+   top: 50px;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+  }
+  /* dit is voor de foto van send post op de pagina skills */
+ .send-post{
+  width: 500px;
+  height: 800px;
+}
+/* dit is de foto van send post */
+#img-send{
+  position: relative;
+  top: 100px;
+  left: 130px;
+  height: 450px;
+  width: 325px;
+  border-radius: 25px;
+}
+/* dit is de foto van de drie mensen in de foto */
+#img-drie-mensen{
+  position: relative;
+  top: 50px;
+  left: 260px;
+  height: 450px;
+  width: 325px;
+border-radius: 25px;
+}
+/* dit is voor de tekst onder de foto van de drie mensen */
+.if-you{
+  position: relative;
+  top: 550px;
+  right: 100px;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  height: 160px;
+  width: 400px;
+  background-color: #281C3A;
+  border-radius: 25px;
+}
+/* dit is voor de titles van alle pagina's */
+.title-alle{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
